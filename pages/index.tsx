@@ -4,9 +4,12 @@ import Header from './Components/Layout/Header'
 import Menu from './Components/Layout/Menu';
 import styled, { createGlobalStyle } from 'styled-components';
 
+import Card from './Components/Card';
+
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
+    box-sizing: border-box;
   }
   body {
     font-family: 'Archivo', 'Poppins';
@@ -26,7 +29,9 @@ export default function Home() {
       <App>
         <Header />
         <Menu />
-        <Container />
+        <Container>
+          <Card />
+        </Container>
         <Footer />
       </App>
     </>
